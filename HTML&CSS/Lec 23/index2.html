@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+        .container{
+            background-color: rgb(5, 255, 255);
+            border: solid black 2px;
+            width:100vw;
+            height: 100vh;
+            margin: 0px;
+            padding: 0px; 
+            font-size: 30px; 
+            text-align: center;
+            
+        }
+
+        .rightbox{
+            width: 200px;
+            height: 50px;
+            margin: 10px;
+            padding:3px;
+            position: relative;
+            animation-name:rightbox;
+            animation: rightbox 5s linear 0s infinite alternate forwards;
+        }
+
+        .leftbox{
+           width: 200px;
+           height: 50px;
+           margin: 10px;
+           padding:3px;
+           position: relative;
+           animation-name:leftbox;
+           animation: leftbox 5s linear 0s infinite alternate-reverse forwards;
+       }
+
+       .circle{
+           width: 100px;
+           height: 100px;
+           margin: 10px;
+           border-radius: 50px;
+           padding:3px;
+           position: relative;
+           animation-name:circle;
+           animation: circle 3s linear 0s infinite alternate forwards;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+       }
+
+      
+/* .rightbox */
+        @keyframes rightbox {
+            from{top: 0px;
+                 left: 0px;
+                 background-color:rgb(158, 235, 158);
+                 border: solid black 2px;
+            }
+            to{top: 0px;
+                left: 1140px;
+                background-color:rgb(219, 143, 143);
+                border: solid black 2px;   
+            }
+            
+        }
+
+/* .leftbox */
+        @keyframes leftbox {
+            from{top: 0px;
+                 left: 0px;
+                 background-color:rgb(152, 241, 152);
+                 border: solid black 2px;
+            }
+            to{top: 450px;
+                left: 1140px;
+                background-color:red;
+                border: solid black 2px;
+            }
+            
+        }
+
+/* circle */
+        @keyframes circle {
+            from{top:0px;
+                 left: 1140px;
+                 background-color:green;
+                 border: solid black 2px;
+            }
+            to{ top: 450px;
+                left: 0px;
+                background-color:red;
+                border: solid black 2px;
+            }
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="rightbox"> Collage</div>
+        <div class="circle"> ME</div>
+        <div class="leftbox"> My Placement</div>
+    </div>
+</body>
+</html>

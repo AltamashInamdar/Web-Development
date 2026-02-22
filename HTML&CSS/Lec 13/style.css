@@ -1,0 +1,20 @@
+/* element selector */
+h1{
+    text-align: center;
+    background-color: green;
+    color: red;}
+
+/* id */
+#altamash{
+    background-color: aqua;}
+#abcd{
+    background-color: blue;
+    color: red}
+
+/* class */
+.inamdar{
+    background-color: pink;}
+
+/* group selector */
+p,article{
+    width: 500px;}

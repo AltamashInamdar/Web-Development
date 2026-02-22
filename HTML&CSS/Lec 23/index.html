@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aj Padenge Animation </title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: aqua;
+            border: solid black 3px;
+
+        }
+
+        .rightbox{
+            width: 350px;
+            height: 80px;
+            background-color: blue;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 5px;
+            border: solid black 2px;
+            position: relative;
+            animation-name:rightMovement;
+            /* animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-delay: 0s;
+            animation-timing-function:linear;
+           animation-direction: alternate-reverse;
+           animation-fill-mode: forwards; */
+           animation: rightMovement 5s linear 0s infinite alternate forwards;
+        }
+
+        .leftbox{
+            width: 350px;
+            height: 80px;
+            background-color: blue;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 5px;
+            border: solid black 2px;
+            position: relative;
+            animation-name:leftMovement;
+           animation: leftMovement 5s linear 0s infinite alternate-reverse forwards;
+        }
+
+        .circle{
+            width: 150px;
+            height: 150px;
+            background-color: rgb(6, 219, 77);
+            border-radius: 75px;
+            margin: 10px;
+            border: solid black 2px;
+            position: relative;
+            top: 340px;
+            left: 675px;
+            animation-name:circleMovement;
+           animation: circleMovement 10s linear 0s infinite alternate-reverse forwards;
+        }
+       
+           @keyframes rightMovement {
+            from{
+                top:0px;
+                left:0;
+            }
+            to{
+                top:0px;
+                left:985px;
+            }
+        }
+
+            @keyframes circleMovement {
+           0%{ top:1%;
+                left:5%;
+           }
+           30%{ top:5%;
+                left:90%;
+           }
+           60%{ top:90%;
+                left:10%;
+           }
+           100%{ top:95%;
+                left:90%;
+           }
+
+
+
+
+
+        }
+
+        @keyframes leftMovement {
+            from{    top:250px;
+                     left:0px;
+             }
+            to{      top:250px;
+                     left:985px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+        <div class="container">
+            <div class="rightbox"></div>
+
+            <div class="circle"></div>
+
+            <div class="leftbox"></div>
+
+        </div>
+
+        
+</body>
+</html>

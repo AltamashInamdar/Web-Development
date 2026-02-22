@@ -1,0 +1,205 @@
+    *{
+        margin: 0%;
+        padding: 0%;
+        font-family: 'Inter', sans-serif;
+        text-decoration: none;
+    }
+
+    body{
+        height: 100vh;
+        background-color: aliceblue;
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .Header{
+        max-width:750px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        gap: 1rem;
+        padding: 1rem;
+        
+    }
+    .Headline{
+        display: flex;
+        align-items: center;
+        font-size:1.5rem;
+        font-weight:bold;
+        color: black;
+        gap:0.5rem;
+    }
+
+    .logo{
+        height: 1rem;
+        width: 0.7rem;
+    }
+
+    .nav{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+    .navlink{
+        color: rgb(110, 108, 108);
+        transform: color 0.1s;
+    }
+    .nav{
+        display: none;
+        gap: 1.5rem;
+    }
+    @media Screen and (min-width:750px)
+    {
+        .nav{
+            display: flex;
+        }
+    }
+    .navlink:hover{
+        color: blue;
+    }
+
+    .ContactButton{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 3px;
+        font-size: 0.8rem;
+        height: 1.5rem;
+        width:6rem ;
+        background-color: rgb(95, 95, 253);
+        color: aliceblue;
+        transform:0.1s;
+    }
+    .ContactButton{
+        display: none;
+    }
+    @media screen and  (min-width:750px) {
+       .ContactButton{
+        display: flex;
+       }
+    }
+    .ContactButton:hover{
+        background-color:blue
+    }
+    button{
+        height: 1rem;
+        width: 1rem;
+    }
+
+
+    .menubutton{
+        display:none;
+       
+    }
+    @media screen and (max-width:750px) {
+    .menubutton{
+        display: block;
+        border: none;
+        border-radius: 3px;
+        transform: o.1s;
+        font-size: 0.8rem;
+    }
+        
+    }
+
+    .menuicon{
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+
+    .content{
+        width: 750px;
+        margin: auto;
+        display: flex;
+        align-items:center;
+        padding: 1rem;
+    }
+    .main-section{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    @media screen and (max-width:800px){
+        .main-section{
+            display:flex;
+            flex-direction: column;
+            border: none;
+            align-items: center;
+            border-radius: 3px;
+            transform: o.1s;
+            font-size: 0.8rem;
+        }
+    }
+    .content-left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .para{
+        color: blueviolet;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .H1{
+        font-size:3rem ;
+        font-weight: 790;
+    }
+
+    .para2{
+        color: rgb(104, 104, 104);
+        font-size: 15px;
+        padding:1rem 3rem 1rem 0;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+    }
+
+    .button-group{
+        display: flex;
+        flex-direction: row;
+       justify-content: center;
+        gap: 1rem;
+        font-weight: 600;
+        font-size: 0.7rem;
+    }
+
+    .ankr1{
+        background-color: blue;
+        color:white;
+        height:1.5rem;
+        width: 5.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 3px;
+    }
+    .ankr2{
+        background-color:rgb(58, 40, 40);
+        color:white;
+        height:1.5rem;
+        width: 5.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 3px;
+    }
+
+
+
+
+
+
+
+
+
+    .section-image{
+        height:100%;
+        width:300px;
+        border-radius: 10px;
+    }

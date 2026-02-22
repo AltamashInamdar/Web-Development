@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            width: 100%;
+            height: 100%;
+        }
+        body{
+            padding: 0%;
+            margin: 0%;
+           
+        }
+
+        .container{
+           width: 100%;
+           height: 70%;
+           padding: 4rem;
+           display: grid;
+           gap: 1rem;
+           background-color: rgb(122, 120, 120);
+
+            grid-template-areas: 
+            "Header Header Header"
+            "Sitebar Column1 Column1"
+            "Sitebar Column2 Column3"
+            "Footer Footer Footer"
+            ;
+            
+        }
+        .class{
+            border: 2px solid black;
+            background-color: rgb(140, 164, 245);
+            padding: 1rem;
+            color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        #Header{
+            grid-area: Header;
+        }
+
+        #Sitebar{
+            grid-area: Sitebar;
+        }
+
+        #Column1{
+            grid-area: Column1;
+        }
+
+        #Column2{
+            grid-area: Column2;
+        }
+        #Column3{
+            grid-area: Column3;
+        }
+        #Footer{
+            grid-area: Footer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="class"id="Header">Header</div>
+        <div class="class" id="Sitebar">Sitebar</div>
+        <div class="class" id="Column1">Column1</div>
+        <div class="class" id="Column2">Column2</div>
+        <div class="class" id="Column3">Column3</div>
+        <div class="class" id="Footer">Footer</div>
+    </div>
+</body>
+</html>

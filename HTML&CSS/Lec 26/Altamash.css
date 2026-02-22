@@ -1,0 +1,46 @@
+.container{
+    background-color: beige;
+    border: 5px solid black;
+    margin: 2px;
+    padding: 2px;
+    display: flex;
+
+}
+
+.box{
+    height: 200px;
+    width: 100px;
+    border: solid 2px black;
+    margin: 2px;
+    padding: 2px;
+    display: flex;
+
+}
+
+#box1{
+    background-color: green;
+}
+#box2{
+    background-color: red;
+
+}
+
+#box3{
+    background-color: yellow;
+
+}
+
+#box4{
+    background-color: orange;
+}
+@media (min-width: 600px) { 
+    .container{
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 640px){
+    .container{
+        flex-direction: column;
+    }
+}

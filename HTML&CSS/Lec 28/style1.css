@@ -1,0 +1,27 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(203, 255, 238);
+    border: solid rgb(68, 245, 77) 5px;
+    display: grid;
+    gap: 1rem;
+    
+}
+
+.item{
+    width: 100px;
+    height: 100px; background-color: brown;
+    border: 5px solid black;
+    display: flex;
+    justify-self: center;
+    align-self:center;
+    place-items:center;
+    
+    
+}

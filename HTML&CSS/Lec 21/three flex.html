@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: aqua;
+            border: solid black 2px;
+            display: flex;
+            flex-direction: row;
+            width: 450px;
+
+
+        }
+        #boxleft{
+            width: 50%;
+            background-color: blue;
+            border: solid red 2px;
+            padding: 5px;
+            margin: 3px;
+            display: flex;
+            flex-direction: column;
+
+        }
+        #boxright{
+            width: 50%;
+            background-color: brown;
+            border: solid green 2px;
+            padding: 5px;
+            margin: 3px;
+        }
+        p{
+            /* width: 200px; */
+            border: solid black 2px;
+        }
+        img{
+            width: 222px;
+            height: 260px;
+        }
+        @media(max-width:640px) {
+            .container{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div id="boxleft">
+        <p>text</p>
+        <p>text</p>
+      </div>
+
+      <div id="boxright">
+        <img src="Altamash 4.png" alt="">
+      </div>
+
+    </div>
+</body>
+</html>
